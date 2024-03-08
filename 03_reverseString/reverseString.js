@@ -1,4 +1,5 @@
 const reverseString = function(string) {
+    if(string==='') return '';
     let chain="";
     for(let i=string.length-1;i>=0;i--){
         chain+=string[i];
