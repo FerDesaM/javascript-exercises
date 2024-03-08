@@ -1,6 +1,7 @@
 const repeatString = function(string , num) {
     let chain="";
-    if(string==="") return Error;
+    if(string==="") return '';
+    if(num<0) return 'ERROR';
     for(let i=0;i<num;i++){
         chain+=string;
     }
