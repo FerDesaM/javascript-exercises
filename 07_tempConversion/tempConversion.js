@@ -1,10 +1,11 @@
 const convertToCelsius = function(grade) {
   let celsius=(grade-32)*5/9;
-  return celsius;
+  return Math.round(celsius*10)/10;
 };
 
-const convertToFahrenheit = function(grade) { 
-  let fahrenheit;
+const convertToFahrenheit = function(grader) { 
+  let fahrenheit=(grader*9/5)+32;
+  return Math.round(fahrenheit*10)/10;
 
 };
 
